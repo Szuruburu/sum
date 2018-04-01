@@ -1,12 +1,8 @@
 #Include, aesl.ahk
 
-global outputFile := "data.txt"
-FileDelete, data.txt
+Input, i
 
-InputBox, i, How many iterations?, How many iterations?,,200,100
-
-makeLine(which := "second",iterations := 100) {
- global outputFile
+makeLine(which := "second",iterations := 100,outputFile := "data.txt") {
 	q := 1
 	p := 2
 	

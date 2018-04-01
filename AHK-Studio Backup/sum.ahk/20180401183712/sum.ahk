@@ -1,7 +1,6 @@
 #Include, aesl.ahk
 
 global outputFile := "data.txt"
-FileDelete, data.txt
 
 InputBox, i, How many iterations?, How many iterations?,,200,100
 
